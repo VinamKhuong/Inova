@@ -1,0 +1,54 @@
+.section-search {
+  display: flex;
+}
+
+.list-countries {
+  height: calc(100vh - 90px);
+  overflow: scroll;
+}
+
+.card {
+  width: 18rem;
+}
+
+.section-countries {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.detail-country {
+  display: none;
+}
+
+.detail-flag {
+  width: 15rem;
+}
+
+.country-active {
+  background-color: lightgray;
+}
+
+@media only screen and (max-width: 600px) {
+  #detail-country-mobile {
+    display: block;
+  }
+
+  #detail-country {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  #detail-country-mobile {
+    display: none;
+  }
+
+  #detail-country {
+    display: block;
+  }
+}
+
+.hide {
+  display: none !important;
+}

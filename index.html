@@ -1,1 +1,57 @@
-
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Countries</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <script src="country.ts"></script>
+  </head>
+  <body>
+    <section class="section-search">
+      <input
+        class="form-control"
+        id="searchCountry"
+        placeholder="Type to search..."
+      />
+      <button
+        type="button"
+        id="btnSearch"
+        onClick="filterCountries()"
+        class="btn btn-primary"
+      >
+        Search
+      </button>
+    </section>
+    <section id="section-countries" class="section-countries">
+      <div id="list-countries" class="list-countries"></div>
+      <div id="detail-country" class="detail-country hide">
+        <div class="card">
+          <div class="card-body">
+            <img class="detail-flag" />
+            <div class="detail-information">
+              <h5>Native name</h5>
+              <p class="detail-native-name"></p>
+              <h5>Capital</h5>
+              <p class="detail-capital"></p>
+              <h5>Population</h5>
+              <p class="detail-population"></p>
+              <h5>Languages</h5>
+              <p class="detail-languages"></p>
+              <h5>Time zones</h5>
+              <p class="detail-time-zone"></p>
+              <h5>Currencies names</h5>
+              <p class="detail-currencies"></p>
+              <h5>Name of border countries</h5>
+              <p class="detail-border-countries"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
